@@ -1,0 +1,109 @@
+/* Why Choose Section */
+.why-us {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.why-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.why-content p {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Stats */
+.stats-row {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item h4 {
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Feature Cards */
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateX(10px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 102, 255, 0.05);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 102, 255, 0.1);
+    color: var(--primary);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.feature-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.feature-text p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .why-content {
+        margin-bottom: 40px;
+    }
+
+    .stats-row {
+        justify-content: center;
+    }
+
+    .feature-card {
+        text-align: left;
+    }
+}

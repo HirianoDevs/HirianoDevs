@@ -1,0 +1,96 @@
+/* Section Services */
+.services {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -1.5px;
+}
+
+/* Bento Grid Layout */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+}
+
+.bento-item {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 32px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bento-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border-color: var(--primary);
+}
+
+.bento-item i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.bento-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.bento-item p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Variações de Grid */
+.tall { grid-row: span 2; background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%); }
+.wide { grid-column: span 2; }
+
+/* Ícones de Fundo (Decorativos) */
+.bento-image {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-size: 8rem !important;
+    opacity: 0.03;
+    transform: rotate(-15deg);
+}
+
+/* Responsividade do Bento */
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .tall, .wide { grid-row: span 1; grid-column: span 1; }
+}
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .services { padding-bottom: 150px; } /* Espaço para a tab-bar mobile */
+}
+
+/* Cores Específicas para Destaque */
+.ai { background: radial-gradient(circle at top right, #e0eaff, var(--light)); }
+.games { background: radial-gradient(circle at top right, #f0fdf4, var(--light)); }
+.games i { color: #22c55e; }

@@ -1,0 +1,74 @@
+/* Brands Section Modern */
+.brands-slider {
+    padding: 60px 0;
+    background: var(--light);
+    overflow: hidden;
+    position: relative;
+}
+
+.brands-title {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+.slider-wrapper {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.track {
+    display: flex;
+    gap: 80px;
+    width: calc(250px * 12);
+    animation: scroll 30s linear infinite;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #64748b;
+    filter: grayscale(1);
+    opacity: 0.6;
+    transition: 0.4s ease;
+    white-space: nowrap;
+}
+
+.logo-item i {
+    font-size: 2rem;
+}
+
+.logo-item:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+/* Animação do Carrossel */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 6)); }
+}
+
+/* Pausar ao passar o mouse */
+.slider-wrapper:hover .track {
+    animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+    .track {
+        gap: 40px;
+    }
+    .brands-slider {
+        padding: 40px 0;
+    }
+}
