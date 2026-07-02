@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>HirianoDevs | Soluções Digitais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HirianoDevs — Desenvolvimento de Apps e Websites</title>
     
     <meta name="theme-color" content="#0066FF">
 
@@ -12,565 +12,203 @@
 
 
 <link rel="icon" type="image/png" href="images/favicon.png">
-
-<link rel="apple-touch-icon" href="images/favicon.png">
-
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="estilos/serviços.css">
-    <link rel="stylesheet" href="estilos/footer.css">
-    <link rel="stylesheet" href="estilos/loader.css">
-    <link rel="stylesheet" href="estilos/contacto.css">
-    <link rel="stylesheet" href="estilos/planos.css">
-    <link rel="stylesheet" href="estilos/flutuante.css">
-    <link rel="stylesheet" href="estilos/badge.css">
-    <link rel="stylesheet" href="estilos/marcas.css">
-    <link rel="stylesheet" href="estilos/demos.css">
-    <link rel="stylesheet" href="estilos/why-us.css">
 </head>
 <body>
-    
-    <div id="loader" class="loader-wrapper">
-    <div class="loader-content">
-        <div class="loader-brand">
-            <div class="brand-icon">H</div>
-            <span class="brand-text">Hiriano<span>Devs</span></span>
-        </div>
-        <div class="loader-line">
-            <div class="progress"></div>
-        </div>
-    </div>
-</div>
 
-
-    <header class="main-nav">
-    <div class="container">
-        <div class="brand">
-            <div class="brand-icon">H</div>
-            <span>Hiriano<span>Devs</span></span>
-        </div>
-
-        <nav class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Serviços</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contacto</a>
-        </nav>
-
-        <div class="nav-actions">
-            <button class="btn-action pulse hide-mobile">
-                <span>Começar</span>
-                <i class="ri-arrow-right-line"></i>
-            </button>
-            
-            <button class="btn-menu" id="menuToggle" aria-label="Abrir Menu">
-                <i class="ri-menu-5-line"></i>
-            </button>
-        </div>
-    </div>
-</header>
-
-
-    <main class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                
-                <div class="status-hero">
-                    <span class="tot"></span> Soluções digitais de qualidade
-                </div>
-                
-                <h1>Software de <span class="gradient">Alto Impacto</span> para o seu negócio.</h1>
-                
-                <div class="members-stack">
-    <div class="avatars">
-        <img src="https://i.pravatar.cc/100?u=1" alt="Membro 1">
-        <img src="https://i.pravatar.cc/100?u=2" alt="Membro 2">
-        <img src="images/ceo.png" alt="Membro 3">
-    </div>
-    <div class="members-text">
-        Membros inovadores da <span>HirianoDevs Moz</span>
-    </div>
-</div>
-                
-                <p>Especialistas em transformar ideias complexas em interfaces simples e lucrativas.</p>
-                
-                <div class="hero-group">
-                    <button class="btn-primary">Criar Site <i class="ri-code-s-slash-fill"></i></button>
-                    <button class="btn-secondary">Consultoria <i class="ri-discuss-line"></i></button>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <section class="brands-slider">
-    <div class="container">
-        <p class="brands-title">Tecnologias e parceiros que confiam em nós</p>
-        <div class="slider-wrapper">
-            <div class="track">
-                <div class="logo-item"><i class="ri-google-fill"></i> Google</div>
-                <div class="logo-item"><i class="ri-netflix-fill"></i> Netflix</div>
-                <div class="logo-item"><i class="ri-amazon-fill"></i> Amazon</div>
-                <div class="logo-item"><i class="ri-microsoft-fill"></i> Microsoft</div>
-                <div class="logo-item"><i class="ri-spotify-fill"></i> Spotify</div>
-                <div class="logo-item"><i class="ri-apple-fill"></i> Apple</div>
-                <div class="logo-item"><i class="ri-google-fill"></i> Google</div>
-                <div class="logo-item"><i class="ri-netflix-fill"></i> Netflix</div>
-                <div class="logo-item"><i class="ri-amazon-fill"></i> Amazon</div>
-                <div class="logo-item"><i class="ri-microsoft-fill"></i> Microsoft</div>
-                <div class="logo-item"><i class="ri-spotify-fill"></i> Spotify</div>
-                <div class="logo-item"><i class="ri-apple-fill"></i> Apple</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ceo-section" id="about-ceo">
-    <div class="container">
-        <div class="ceo-grid">
-            <div class="ceo-image-container">
-                <div class="experience-badge">
-                    <span class="number">Founder</span>
-                    <span class="text">HirianoDevs</span>
-                </div>
-                <div class="image-wrapper">
-                    <img src="images/ceo.png" alt="CEO HirianoDevs">
-                </div>
-                <div class="image-decoration"></div>
-            </div>
-
-            <div class="ceo-content">
-                <span class="label"><i class="ri-user-star-line"></i> Liderança Criativa</span>
-                <h2>Conheça a mente por trás da <span class="gradient">Inovação</span></h2>
-                <p class="ceo-bio">
-                    Especialista em desenvolvimento de software e apaixonado por criar interfaces que unem estética e funcionalidade. Como fundador da <strong>HirianoDevs</strong> em Vilankulos, meu compromisso é elevar o padrão digital de Moçambique, transformando visões complexas em produtos de alto impacto.
-                </p>
-                
-                <div class="ceo-features">
-                    <div class="ceo-stat">
-                        <i class="ri-code-box-line"></i>
-                        <div>
-                            <h4>Fullstack Dev</h4>
-                            <p>Especialista UI/UX</p>
-                        </div>
-                    </div>
-                    <div class="ceo-stat">
-                        <i class="ri-lightbulb-line"></i>
-                        <div>
-                            <h4>Visão Estratégica</h4>
-                            <p>Foco em Resultados</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ceo-footer">
-                    <div class="ceo-signature">
-                        <p>CEO & Founder</p>
-                        <div class="social-mini">
-                            <a href="#"><i class="ri-linkedin-fill"></i></a>
-                            <a href="#"><i class="ri-github-fill"></i></a>
-                            <a href="#"><i class="ri-instagram-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="projects-demo" id="projects-showcase">
-    <div class="container">
-        <div class="section-header">
-            <span class="label"><i class="ri-rocket-line"></i> Portfólio de Elite</span>
-            <h2>Projetos que <span class="gradient">moldam o futuro</span></h2>
-            <p>Uma vitrine de soluções desenvolvidas com o DNA da HirianoDevs Moz.</p>
-        </div>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" alt="EduSeek AI">
-                    <div class="project-overlay">
-                        <button class="btn-view">Ver Demo <i class="ri-external-link-line"></i></button>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Educação & IA</span>
-                    <h3>EduSeek Interface</h3>
-                    <p>Plataforma de IA educacional com processamento de linguagem natural.</p>
-                    <div class="project-tags">
-                        <span><i class="ri-code-line"></i> React</span>
-                        <span><i class="ri-cpu-line"></i> LLM</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop" alt="TicketNow">
-                    <div class="project-overlay">
-                        <button class="btn-view">Reservar <i class="ri-ticket-2-line"></i></button>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">E-commerce</span>
-                    <h3>TicketNow Moz</h3>
-                    <p>Sistema completo de venda de ingressos para eventos em Moçambique.</p>
-                    <div class="project-tags">
-                        <span><i class="ri-bank-card-line"></i> Pagamentos</span>
-                        <span><i class="ri-qr-code-line"></i> Check-in</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1556122071-e404be7457cd?q=80&w=2040&auto=format&fit=crop" alt="VilaTaxi">
-                    <div class="project-overlay">
-                        <button class="btn-view">Explorar <i class="ri-map-pin-5-line"></i></button>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Mobilidade</span>
-                    <h3>VilaTaxi App</h3>
-                    <p>Interface de transporte urbano otimizada para o distrito de Vilankulos.</p>
-                    <div class="project-tags">
-                        <span><i class="ri-navigation-line"></i> GPS</span>
-                        <span><i class="ri-smartphone-line"></i> Mobile</span>
-                    </div>
-                </div>
-            </div>
-            
-                    <div class="projects-footer">
-            <a href="#portfolio" class="btn-all-projects">
-                <span>Ver Todos os Projetos</span>
-                <div class="btn-icon">
-                    <i class="ri-arrow-right-up-line"></i>
-                </div>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img class="logo" src="images/logo.png">
+                HirianoDevs
             </a>
-        </div>
-
             
-        </div>
-    </div>
-</section>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" class="nav-link">Soluções</a></li>
+                <li><a href="#" class="nav-link">Projetos</a></li>
+                <li><a href="#" class="nav-link">Sobre</a></li>
+                <li><a href="#" class="nav-link">Preços</a></li>
+            </ul>
 
-
-    
-    <section class="contact-bar">
-    <div class="container">
-        <div class="bar-inner">
-            <div class="bar-item">
-                <div class="icon-box"><i class="ri-whatsapp-line"></i></div>
-                <div class="bar-text">
-                    <span>Fale Connosco</span>
-                    <p>+258 84 000 0000</p>
+            <div class="nav-right-wrapper">
+                <div class="nav-btn-wrapper">
+                    <a href="#" class="btn-pill">Iniciar Projeto <i class="ri-arrow-right-line"></i></a>
                 </div>
-            </div>
-            
-            <div class="bar-divider"></div>
-
-            <div class="bar-item">
-                <div class="icon-box"><i class="ri-mail-send-line"></i></div>
-                <div class="bar-text">
-                    <span>E-mail Profissional</span>
-                    <p>info@hirianodevs.com</p>
-                </div>
-            </div>
-
-            <div class="bar-divider"></div>
-
-            <div class="bar-item">
-                <div class="icon-box"><i class="ri-map-pin-user-line"></i></div>
-                <div class="bar-text">
-                    <span>Localização</span>
-                    <p>Vilankulos, Moçambique</p>
-                </div>
-            </div>
-
-            <div class="bar-item bar-cta">
-                <a href="#" class="btn-mini">
-                    Agendar Reunião <i class="ri-calendar-check-line"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-    <section class="services" id="projects">
-    <div class="container">
-        <div class="services-header">
-            <span class="label">Nossas Especialidades</span>
-            <h2>Soluções que <span class="gradient">desafiam o comum</span></h2>
-            <p>Se você consegue imaginar, a HirianoDevs consegue codificar.</p>
-        </div>
-
-        <div class="bento-grid">
-            <div class="bento-item tall portfolio">
-                <div class="bento-content">
-                    <i class="ri-briefcase-line"></i>
-                    <h3>Portfólios Empresariais</h3>
-                    <p>Design de elite para marcas que buscam autoridade imediata.</p>
-                </div>
-                <div class="bento-image">
-                   <i class="ri-window-fill"></i>
-                </div>
-            </div>
-
-            <div class="bento-item apps">
-                <div class="bento-content">
-                    <i class="ri-smartphone-line"></i>
-                    <h3>Apps Nativos</h3>
-                    <p>iOS e Android com performance fluida.</p>
-                </div>
-            </div>
-
-            <div class="bento-item ai">
-                <div class="bento-content">
-                    <i class="ri-brain-line"></i>
-                    <h3>Inteligência Artificial</h3>
-                    <p>Automação e LLMs integrados ao seu fluxo.</p>
-                </div>
-            </div>
-
-            <div class="bento-item wide platforms">
-                <div class="bento-content">
-                    <i class="ri-shield-user-line"></i>
-                    <h3>Plataformas Digitais</h3>
-                    <p>Sistemas complexos sob medida para gestão e escala global.</p>
-                </div>
-            </div>
-
-            <div class="bento-item shop">
-                <div class="bento-content">
-                    <i class="ri-shopping-bag-3-line"></i>
-                    <h3>Lojas Virtuais</h3>
-                    <p>E-commerce focado em conversão extrema.</p>
-                </div>
-            </div>
-
-            <div class="bento-item games">
-                <div class="bento-content">
-                    <i class="ri-gamepad-line"></i>
-                    <h3>Videojogos</h3>
-                    <p>Experiências interativas e gamificação empresarial.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="why-us" id="why-choose">
-    <div class="container">
-        <div class="why-grid">
-            <div class="why-content">
-                <span class="label"><i class="ri-medal-line"></i> Excelência Garantida</span>
-                <h2>Por que confiar sua ideia à <span class="gradient">HirianoDevs?</span></h2>
-                <p>Combinamos a proximidade de um atendimento local em Vilankulos com padrões globais de desenvolvimento de software.</p>
                 
-                <div class="stats-row">
-                    <div class="stat-item">
-                        <h4>100%</h4>
-                        <span>Código Limpo</span>
-                    </div>
-                    <div class="stat-item">
-                        <h4>24/7</h4>
-                        <span>Suporte Ativo</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="features-list">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="ri-shield-check-line"></i>
-                    </div>
-                    <div class="feature-text">
-                        <h3>Segurança de Dados</h3>
-                        <p>Protegemos sua plataforma com criptografia de ponta e protocolos modernos.</p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="ri-timer-flash-line"></i>
-                    </div>
-                    <div class="feature-text">
-                        <h3>Entrega Ágil</h3>
-                        <p>Metodologias que garantem o lançamento do seu projeto no menor tempo possível.</p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="ri-p2p-line"></i>
-                    </div>
-                    <div class="feature-text">
-                        <h3>Design Centrado no Usuário</h3>
-                        <p>Interfaces intuitivas que convertem visitantes casuais em clientes fiéis.</p>
+                <div class="header-actions">
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Alternar Tema">
+                        <i class="ri-moon-line"></i>
+                    </button>
+                    <div class="menu-toggle" id="menuToggle">
+                        <i class="ri-menu-line"></i>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="badge">Sistemas Inteligentes & Interfaces Fluidas</span>
+                <h1>Construímos aplicações nativas e experiências web de alto padrão.</h1>
+                <p>A HirianoDevs desenvolve ecossistemas digitais robustos, com código limpo e interfaces minimalistas focadas em conversão.</p>
+                
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" alt="Dashboard interface preview mock" class="hero-img-pro">
+                </div>
+            </div>
+        </section>
+
+        <section class="banners-section">
+            <div class="container">
+                <div class="banners-grid">
+                    
+                    <div class="banner-card blue">
+                        <div class="icon-wrapper">
+                            <i class="ri-android-line"></i>
+                        </div>
+                        <div class="banner-content">
+                            <h3>Mobile Apps (APKs)</h3>
+                            <p>Aplicações Android rápidas, leves e fluidas desenvolvidas com precisão arquitetural.</p>
+                            <a href="#" class="btn-pill">Explorar <i class="ri-arrow-up-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="banner-card green">
+                        <div class="icon-wrapper">
+                            <i class="ri-code-s-slash-line"></i>
+                        </div>
+                        <div class="banner-content">
+                            <h3>Websites Modernos</h3>
+                            <p>Plataformas responsivas, limpas, rápidas e otimizadas para motores de busca.</p>
+                            <a href="#" class="btn-pill">Ver Designs <i class="ri-arrow-up-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="banner-card purple">
+                        <div class="icon-wrapper">
+                            <i class="ri-brain-line"></i>
+                        </div>
+                        <div class="banner-content">
+                            <h3>Soluções com Inteligência Artificial</h3>
+                            <p>Integração de APIs avançadas (LLMs) e automações sob medida para elevar a produtividade do seu negócio ao próximo nível tecnológico.</p>
+                            <a href="#" class="btn-pill">Descobrir HirianoAI <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O Ecossistema Digital Completo</h2>
+                </div>
+                
+                <div class="services-list">
+                    <div class="service-item">
+                        <i class="ri-smartphone-line"></i>
+                        <h4>Design Responsivo</h4>
+                        <p>Interfaces que se adaptam perfeitamente a telas mobile e desktops, mantendo a consistência visual.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="ri-compass-3-line"></i>
+                        <h4>Minimalismo Funcional</h4>
+                        <p>Sem excessos. Focamos em tipografia limpa, cantos arredondados e espaços que respiram.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="ri-flashlight-line"></i>
+                        <h4>Performance Extrema</h4>
+                        <p>Código otimizado para carregamentos instantâneos, garantindo excelente experiência do usuário.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <h2>Subscreva a nossa newsletter</h2>
+                    <p>Receba insights semanais sobre design minimalista, desenvolvimento ágil e tendências de tecnologia diretamente no seu email.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Seu melhor email" required class="input-pill">
+                        <button type="submit" class="btn-pill">Assinar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        <img class="logo" src="images/logo.png" alt="HirianoDevs">
+                        HirianoDevs
+                    </a>
+                    <p class="footer-desc">Moldando o futuro digital através de arquiteturas sólidas e designs elegantes de última geração.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Github"><i class="ri-github-line"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Desenvolvimento Web</a></li>
+                        <li><a href="#">Aplicativos Mobile</a></li>
+                        <li><a href="#">Soluções IA</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Diretrizes de Marca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HirianoDevs. Todos os direitos reservados. Design inspirado nas linhas premium contemporâneas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-navigation">
+        <button id="scrollTopBtn" class="floating-btn nav-arrow" aria-label="Rolar para o topo">
+            <i class="ri-arrow-up-line"></i>
+        </button>
+        <button id="scrollBottomBtn" class="floating-btn nav-arrow" aria-label="Rolar para a base">
+            <i class="ri-arrow-down-line"></i>
+        </button>
     </div>
-</section>
 
-
-<section class="pricing" id="pricing">
-    <div class="container">
-        <div class="pricing-header">
-            <span class="label">Investimento Inteligente</span>
-            <h2>Planos que impulsionam sua <span class="gradient">escala</span></h2>
-            <p>Escolha a estrutura ideal para a fase atual do seu negócio.</p>
-        </div>
-
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <div class="pricing-top">
-                    <i class="ri-rocket-line"></i>
-                    <h3>Start Up</h3>
-                    <div class="price">
-                        <span class="currency">MZN</span>
-                        <span class="amount">15k</span>
-                        <span class="period">/projeto</span>
-                    </div>
-                </div>
-                <ul class="features">
-                    <li><i class="ri-checkbox-circle-fill"></i> Site One-Page (Landing Page)</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Design Responsivo (Mobile)</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Integração com WhatsApp</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> SEO Básico Google</li>
-                    <li class="disabled"><i class="ri-close-circle-line"></i> Painel Administrativo</li>
-                </ul>
-                <button class="btn-pricing">Começar Agora</button>
-            </div>
-
-            <div class="pricing-card featured">
-                <div class="popular-badge">Mais Procurado</div>
-                <div class="pricing-top wata">
-                    <i class="ri-vip-diamond-line"></i>
-                    <h3>Business Elite</h3>
-                    <div class="price">
-                        <span class="currency">MZN</span>
-                        <span class="amount">45k</span>
-                        <span class="period">/projeto</span>
-                    </div>
-                </div>
-                <ul class="features">
-                    <li><i class="ri-checkbox-circle-fill"></i> Até 5 Páginas Premium</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Sistema de Gestão de Conteúdo</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Velocidade Otimizada</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Integração Groq AI / LLM</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Suporte Prioritário</li>
-                </ul>
-                <button class="btn-pricing pulse">Escalar Negócio</button>
-            </div>
-
-            <div class="pricing-card">
-                <div class="pricing-top">
-                    <i class="ri-stack-line"></i>
-                    <h3>Enterprise</h3>
-                    <div class="price">
-                        <span class="amount">Custom</span>
-                    </div>
-                </div>
-                <ul class="features">
-                    <li><i class="ri-checkbox-circle-fill"></i> Plataformas Web Complexas</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Aplicações Mobile Nativas</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Infraestrutura em Cloud</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Consultoria de Branding</li>
-                    <li><i class="ri-checkbox-circle-fill"></i> Manutenção 24/7</li>
-                </ul>
-                <button class="btn-pricing outline">Falar com Especialista</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-    <footer class="main-footer">
-    <div class="container">
-        <div class="footer-cta">
-            <div class="cta-content">
-                <h2>Pronto para tirar sua <span class="gradient">ideia do papel?</span></h2>
-                <p>Junte-se às empresas que já inovam com a HirianoDevs em Moçambique.</p>
-            </div>
-            <button class="btn-primary">
-                Iniciar Projeto <i class="ri-arrow-right-up-line"></i>
-            </button>
-        </div>
-
-        <div class="footer-grid">
-            <div class="footer-col">
-                <div class="brand">
-                    <div class="brand-icon">H</div>
-                    <span>Hiriano<span>Devs</span></span>
-                </div>
-                <p class="footer-desc">Transformando o ecossistema digital de Vilankulos para o mundo através de código de alta performance.</p>
-                <div class="social-links">
-                    <a href="#"><i class="ri-instagram-line"></i></a>
-                    <a href="#"><i class="ri-linkedin-box-line"></i></a>
-                    <a href="#"><i class="ri-github-line"></i></a>
-                    <a href="#"><i class="ri-whatsapp-line"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="#">Websites Premium</a></li>
-                    <li><a href="#">Aplicativos Móveis</a></li>
-                    <li><a href="#">Sistemas de IA</a></li>
-                    <li><a href="#">E-commerce</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Nosso Processo</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Carreiras</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Localização</h4>
-                <p><i class="ri-map-pin-2-line"></i> Vilankulos, Inhambane</p>
-                <p><i class="ri-mail-line"></i> contato@hirianodevs.com</p>
-                <div class="status-badge">
-                    <span class="dot"></span> Disponível para novos projetos
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 HirianoDevs Moz. Todos os direitos reservados.</p>
-            <div class="footer-legal">
-                <a href="#">Privacidade</a>
-                <a href="#">Termos</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<a href="https://wa.me/258840000000" class="floating-contact" target="_blank" aria-label="Contactar no WhatsApp">
-    <div class="floating-icon">
+    <a href="https://wa.me/yournumber" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
         <i class="ri-whatsapp-line"></i>
-    </div>
-    <span class="floating-text">Conversar agora</span>
-</a>
-
-
+    </a>
 
     <script src="script.js"></script>
-    
-    <script src="scripts/load.js"></script>
 </body>
 </html>
