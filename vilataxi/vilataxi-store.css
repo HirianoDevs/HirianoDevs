@@ -1,0 +1,535 @@
+/* ============================================================
+   ESTILOS DA PÁGINA DE DETALHES DO APLICATIVO (PLAYSTORE STYLE)
+   ============================================================ */
+
+.store-main {
+    padding-top: 175px;
+    padding-bottom: 80px;
+}
+
+/* --- CARD DO CABEÇALHO DO APP --- */
+.app-header-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-card);
+    padding: 36px;
+    box-shadow: var(--shadow-pro);
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.app-header-top {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.app-icon-wrapper {
+    width: 110px;
+    height: 110px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 12px;
+    box-shadow: 0 12px 30px rgba(0, 102, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.app-icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+.app-title-group h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+    color: var(--text-dark);
+}
+
+.app-developer {
+    color: var(--accent);
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.app-category {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #10b981;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* --- GRID DE MÉTRICAS DO APP --- */
+.app-stats-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    margin-bottom: 28px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 32px;
+    background-color: var(--border-soft);
+}
+
+.star-icon {
+    color: #f59e0b;
+    font-size: 18px;
+}
+
+.text-green {
+    color: #10b981;
+}
+
+/* --- BOTÕES DE AÇÃO --- */
+.app-action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-store-install {
+    background: var(--accent);
+    color: #ffffff;
+    padding: 16px 36px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    transition: all 0.3s ease;
+}
+
+.btn-store-install:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.5);
+}
+
+.btn-store-secondary {
+    background: transparent;
+    color: var(--text-dark);
+    border: 1px solid var(--border-soft);
+    padding: 16px 28px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-store-secondary:hover {
+    background: var(--newsletter-bg);
+}
+
+.btn-store-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: transparent;
+    color: var(--text-dark);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* --- SEÇÕES DA STORE --- */
+.store-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+}
+
+/* --- SCREENSHOTS SCROLL --- */
+.screenshots-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.screenshots-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.screenshots-scroll::-webkit-scrollbar-thumb {
+    background: var(--border-soft);
+    border-radius: 10px;
+}
+
+.screenshot-card {
+    flex: 0 0 220px;
+    scroll-snap-align: start;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.screen-caption {
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* --- DESCRIÇÃO & TAGS --- */
+.store-description-box {
+    background: var(--bg-card);
+    padding: 28px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.store-description-box p {
+    margin-bottom: 14px;
+}
+
+.tags-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.store-tag {
+    background: var(--newsletter-bg);
+    border: 1px solid var(--border-soft);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* --- RECURSOS GRID --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.feature-card {
+    background: var(--bg-card);
+    padding: 22px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.feature-card i {
+    font-size: 26px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-blue { color: #2563eb; }
+.icon-green { color: #10b981; }
+.icon-purple { color: #8b5cf6; }
+.icon-orange { color: #f97316; }
+
+.feature-card h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* --- TABELA TÉCNICA --- */
+.specs-table-wrapper {
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-soft);
+    padding: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.specs-table td:first-child {
+    color: var(--text-muted);
+    width: 40%;
+}
+
+/* --- AVALIAÇÕES --- */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.review-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-card);
+    padding: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.review-stars {
+    color: #f59e0b;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.review-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ============================================================
+   AJUSTES RESPONSIVOS AVANÇADOS PARA MOBILE E DISPOSITIVOS PEQUENOS
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .store-main {
+        padding-top: 135px;
+        padding-bottom: 40px;
+    }
+
+    .app-header-card {
+        padding: 20px 16px;
+        border-radius: 20px;
+        margin-bottom: 24px;
+    }
+
+    /* Layout Nativo Play Store no Celular (Ícone + Título Lado a Lado) */
+    .app-header-top {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 16px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .app-icon-wrapper {
+        width: 80px;
+        height: 80px;
+        border-radius: 18px;
+        padding: 8px;
+    }
+
+    .app-title-group h1 {
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+
+    .app-developer {
+        font-size: 13px;
+    }
+
+    .app-category {
+        font-size: 12px;
+    }
+
+    .verified-badge {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+
+    /* Métricas Compactas em Fila */
+    .app-stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        padding: 12px 0;
+        margin-bottom: 20px;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-value {
+        font-size: 14px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Botões Full Width para toque rápido */
+    .app-action-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn-store-install {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+
+    .btn-store-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .btn-store-icon {
+        width: 100%;
+        height: 44px;
+        border-radius: var(--radius-pill);
+    }
+
+    /* Screenshots Sangrando nas Bordas */
+    .screenshots-scroll {
+        gap: 12px;
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .screenshot-card {
+        flex: 0 0 160px;
+        border-radius: 14px;
+    }
+
+    .screenshot-card img {
+        height: 280px;
+    }
+
+    /* Seções e Grids */
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .features-grid, .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .store-description-box, .specs-table-wrapper, .feature-card, .review-card {
+        padding: 18px 16px;
+        border-radius: 18px;
+    }
+
+    .specs-table td {
+        padding: 10px 4px;
+        font-size: 13px;
+    }
+
+    .specs-table td:first-child {
+        width: 42%;
+    }
+}
+
