@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Seleciona os botões de download da página
     const downloadBtns = document.querySelectorAll('.btn-store-install, .top-bar-btn');
-    const apkUrl = '/vilataxi/apk/vilataxi.apk';
+    const apkUrl = '../vilataxi/apk/vilataxi.apk';
 
     downloadBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -70,4 +70,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
