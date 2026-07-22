@@ -6,12 +6,10 @@
     <title>HirianoDevs — Desenvolvimento de Apps e Websites</title>
     
     <meta name="theme-color" content="#0066FF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="#0066FF">
 
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="msapplication-navbutton-color" content="#0066FF">
-
-
-<link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +17,29 @@
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- CSS Principal -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- NOVO ARQUIVO CSS DEDICADO À BARRA VILATAXI -->
+    <link rel="stylesheet" href="vilataxi-banner.css">
 </head>
 <body>
 
     <header>
+        <!-- BARRA DO VILATAXI NO TOPO DO SITE -->
+        <div class="top-bar">
+            <div class="container top-bar-container">
+                <div class="top-bar-content">
+                    <img src="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/ccfa45b3-053c-4692-838f-c1f5b3a92fce.png" alt="VilaTaxi Logo" class="top-bar-logo">
+                    <span>Baixe a app <strong>VilaTaxi</strong> e viaje com facilidade!</span>
+                </div>
+                <a href="vilataxi/" class="top-bar-btn">Baixar App <i class="ri-download-2-line"></i></a>
+            </div>
+        </div>
+
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img class="logo" src="images/logo.png">
+                <img class="logo" src="images/logo.png" alt="HirianoDevs">
                 HirianoDevs
             </a>
             
@@ -55,6 +68,7 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section class="hero">
             <div class="container">
                 <span class="badge">Sistemas Inteligentes & Interfaces Fluidas</span>
@@ -67,6 +81,39 @@
             </div>
         </section>
 
+        <!-- NOVO BANNER HORIZONTAL VILATAXI CHAMATIVO COM FITA DE EXCLUSIVO -->
+        <section class="vilataxi-promo-section">
+            <div class="container">
+                <div class="vilataxi-card">
+                    <!-- Fita Diagonal de Exclusivo no Canto -->
+                    <div class="exclusive-ribbon">Exclusivo</div>
+
+                    <!-- Marca / Logo Animado -->
+                    <div class="vilataxi-brand">
+                        <div class="vilataxi-logo-wrapper">
+                            <img src="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/ccfa45b3-053c-4692-838f-c1f5b3a92fce.png" alt="VilaTaxi Logo">
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo Textual e Descrição -->
+                    <div class="vilataxi-info">
+                        <span class="exclusive-badge"><i class="ri-star-fill"></i> Oferta Especial</span>
+                        <h3>Baixe o App VilaTaxi Agora!</h3>
+                        <p>A forma mais rápida, segura e económica de se deslocar pela cidade. Peça a sua viagem em segundos no Android ou iOS.</p>
+                    </div>
+
+                    <!-- Botão de Ação Animado -->
+                    <div class="vilataxi-action">
+                        <a href="vilataxi/" class="btn-vilataxi-download">
+    <span>Baixar App</span>
+    <i class="ri-download-cloud-2-line"></i>
+</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNERS SECTION -->
         <section class="banners-section">
             <div class="container">
                 <div class="banners-grid">
