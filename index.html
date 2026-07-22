@@ -3,24 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HirianoDevs — Desenvolvimento de Apps e Websites</title>
-    
+
+    <!-- SEO Básico para Google e Motores de Busca -->
+    <title>HirianoDevs — Desenvolvimento de Apps Mobile, Websites & IA</title>
+    <meta name="description" content="A HirianoDevs desenvolve ecossistemas digitais robustos, aplicações mobile (APKs Android/iOS), websites modernos, lojas virtuais e integração com Inteligência Artificial.">
+    <meta name="keywords" content="desenvolvimento de apps, criação de sites, inteligência artificial, apk android, sistemas web, ui ux design, hirianodevs, vilataxi">
+    <meta name="author" content="HirianoDevs">
+    <meta name="robots" content="index, follow">
+
+    <!-- Cores de Tema Mobile -->
     <meta name="theme-color" content="#0066FF">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="msapplication-navbutton-color" content="#0066FF">
 
+    <!-- Favicon e Ícones -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+    <link rel="apple-touch-icon" href="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/083c616d-1ea3-4fe4-b89c-371c5ff3fd3e.png">
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn (Imagem Retangular Recomendada) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hirianodevs.online/">
+    <meta property="og:title" content="HirianoDevs — Desenvolvimento de Apps, Websites & Inteligência Artificial">
+    <meta property="og:description" content="Construímos aplicações nativas e experiências web de alto padrão com código limpo e interfaces fluidas.">
+    <meta property="og:image" content="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/e8239fb8-836a-40c7-b6a2-248529748d61.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Open Graph (Imagem Quadrada Fallback para WhatsApp e Feed Apps) -->
+    <meta property="og:image:square" content="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/083c616d-1ea3-4fe4-b89c-371c5ff3fd3e.png">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HirianoDevs — Apps, Websites & Inteligência Artificial">
+    <meta name="twitter:description" content="Construímos aplicações nativas e experiências web de alto padrão com código limpo e interfaces fluidas.">
+    <meta name="twitter:image" content="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/e8239fb8-836a-40c7-b6a2-248529748d61.png">
+
+    <!-- Estrutura de Dados JSON-LD para o Google Reconhecer a Empresa e Logótipo Quadrado -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "HirianoDevs",
+      "url": "https://hirianodevs.online/",
+      "logo": "https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/083c616d-1ea3-4fe4-b89c-371c5ff3fd3e.png",
+      "image": "https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/083c616d-1ea3-4fe4-b89c-371c5ff3fd3e.png",
+      "description": "Desenvolvimento de aplicações mobile nativas, plataformas web modernas, e-commerce e soluções em Inteligência Artificial.",
+      "sameAs": [
+        "https://github.com/",
+        "https://linkedin.com/",
+        "https://twitter.com/"
+      ]
+    }
+    </script>
+
+    <!-- Fontes e Estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- CSS Principal -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- NOVO ARQUIVO CSS DEDICADO À BARRA VILATAXI -->
+    <!-- ARQUIVO CSS DEDICADO À BARRA VILATAXI -->
     <link rel="stylesheet" href="estilos/vilataxi-banner.css">
 </head>
 <body>
@@ -81,33 +126,29 @@
             </div>
         </section>
 
-        <!-- NOVO BANNER HORIZONTAL VILATAXI CHAMATIVO COM FITA DE EXCLUSIVO -->
+        <!-- BANNER HORIZONTAL VILATAXI -->
         <section class="vilataxi-promo-section">
             <div class="container">
                 <div class="vilataxi-card">
-                    <!-- Fita Diagonal de Exclusivo no Canto -->
                     <div class="exclusive-ribbon">Exclusivo</div>
 
-                    <!-- Marca / Logo Animado -->
                     <div class="vilataxi-brand">
                         <div class="vilataxi-logo-wrapper">
                             <img src="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/ccfa45b3-053c-4692-838f-c1f5b3a92fce.png" alt="VilaTaxi Logo">
                         </div>
                     </div>
 
-                    <!-- Conteúdo Textual e Descrição -->
                     <div class="vilataxi-info">
                         <span class="exclusive-badge"><i class="ri-star-fill"></i> Oferta Especial</span>
                         <h3>Baixe o App VilaTaxi Agora!</h3>
                         <p>A forma mais rápida, segura e económica de se deslocar pela cidade. Peça a sua viagem em segundos no Android ou iOS.</p>
                     </div>
 
-                    <!-- Botão de Ação Animado -->
                     <div class="vilataxi-action">
                         <a href="vilataxi/" class="btn-vilataxi-download">
-    <span>Baixar App</span>
-    <i class="ri-download-cloud-2-line"></i>
-</a>
+                            <span>Baixar App</span>
+                            <i class="ri-download-cloud-2-line"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -259,4 +300,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
