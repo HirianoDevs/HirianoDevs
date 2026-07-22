@@ -15,7 +15,10 @@
     --text-muted: #646770;
     --accent: #2563eb;
     --border-soft: rgba(0, 0, 0, 0.04);
-    --header-blur: rgba(252, 252, 253, 0.8);
+    --header-blur: rgba(252, 252, 253, 0.85);
+    
+    --topbar-bg: #000000;
+    --topbar-text: #ffffff;
     
     --banner-blue: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
     --banner-green: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
@@ -31,14 +34,17 @@
 }
 
 body.dark-theme {
-    /* Paleta Dark Otimizada para Leitura Pro */
+    /* Paleta Dark Otimizada */
     --bg-main: #0b0c0e;
     --bg-card: #13151a;
     --text-dark: #f3f4f6;
     --text-muted: #9ca3af;
     --accent: #3b82f6;
     --border-soft: rgba(255, 255, 255, 0.06);
-    --header-blur: rgba(11, 12, 14, 0.8);
+    --header-blur: rgba(11, 12, 14, 0.85);
+    
+    --topbar-bg: #1e232d;
+    --topbar-text: #ffffff;
     
     --banner-blue: linear-gradient(135deg, #141f36 0%, #1d2d4f 100%);
     --banner-green: linear-gradient(135deg, #0d2818 0%, #164428 100%);
@@ -65,7 +71,7 @@ body {
     padding: 0 24px;
 }
 
-/* --- HEADER / NAVBAR --- */
+/* --- HEADER & TOP BAR --- */
 header {
     position: fixed;
     top: 0;
@@ -77,11 +83,56 @@ header {
     border-bottom: 1px solid var(--border-soft);
 }
 
+/* BARRA PROMOCIONAL TOP BAR */
+.top-bar {
+    background-color: var(--topbar-bg);
+    color: var(--topbar-text);
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.top-bar-logo {
+    height: 26px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.top-bar-btn {
+    background: var(--accent);
+    color: #ffffff;
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.top-bar-btn:hover {
+    filter: brightness(1.1);
+    transform: scale(1.03);
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 75px;
 }
 
 .logo {
@@ -93,11 +144,7 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-.logo i {
-    color: var(--accent);
-    font-size: 24px;
+    height: 30px;
 }
 
 .nav-menu {
@@ -181,7 +228,7 @@ header {
 
 /* --- HERO SECTION --- */
 .hero {
-    padding-top: 160px;
+    padding-top: 190px; /* Ajustado para acomodar a barra promocional */
     padding-bottom: 80px;
     text-align: center;
 }
@@ -217,7 +264,6 @@ header {
     line-height: 1.6;
 }
 
-/* CONTAINER DA IMAGEM PREMIUM PRO */
 .hero-image-container {
     max-width: 1000px;
     margin: 16px auto 0 auto;
@@ -350,7 +396,7 @@ header {
     line-height: 1.6;
 }
 
-/* --- NEWSLETTER SECTION PERFEITA PARA MOBILE --- */
+/* --- NEWSLETTER SECTION --- */
 .newsletter-section {
     padding: 80px 0;
     border-top: 1px solid var(--border-soft);
@@ -475,7 +521,7 @@ footer {
     font-size: 14px;
 }
 
-/* --- ELEMENTOS FLUTUANTES CONTEMPORÂNEOS --- */
+/* --- ELEMENTOS FLUTUANTES --- */
 .floating-btn {
     position: fixed;
     z-index: 999;
@@ -493,7 +539,6 @@ footer {
     transform: translateY(-4px) scale(1.04);
 }
 
-/* WhatsApp Link */
 .whatsapp-btn {
     bottom: 24px;
     right: 24px;
@@ -505,7 +550,6 @@ footer {
     font-size: 28px;
 }
 
-/* Barra de Navegação Direcional Rápida */
 .scroll-navigation {
     position: fixed;
     bottom: 24px;
@@ -517,7 +561,7 @@ footer {
 }
 
 .nav-arrow {
-    position: static; /* anula fixed nativo */
+    position: static;
     width: 46px;
     height: 46px;
     background-color: var(--bg-card);
@@ -527,7 +571,7 @@ footer {
     font-size: 18px;
 }
 
-/* --- RESPONSIVIDADE (MOBILE & TABLET) --- */
+/* --- RESPONSIVIDADE --- */
 @media (max-width: 992px) {
     .hero h1 { font-size: 42px; }
     .banners-grid { grid-template-columns: 1fr; }
@@ -537,10 +581,20 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .top-bar-container {
+        justify-content: center;
+    }
+    .top-bar-content span {
+        font-size: 12px;
+    }
+    .top-bar-btn {
+        display: none; /* Oculta o botão pequeno no mobile para economizar espaço */
+    }
+
     .nav-menu {
         display: none;
         position: absolute;
-        top: 80px;
+        top: 110px; /* Ajustado para a altura combinada do header + top-bar */
         left: 0;
         width: 100%;
         background: var(--bg-main);
@@ -559,14 +613,13 @@ footer {
         display: block;
     }
 
-    .hero { padding-top: 120px; }
+    .hero { padding-top: 150px; }
     .hero h1 { font-size: 32px; letter-spacing: -1px; }
     .hero-img-pro { max-height: 280px; }
     .banner-card { padding: 32px; min-height: 320px; }
     .services-list { grid-template-columns: 1fr; gap: 20px; }
     .nav-btn-wrapper { display: none; }
     
-    /* RESOLUÇÃO DA NEWSLETTER EM CELULARES */
     .newsletter-box { padding: 40px 20px; }
     .newsletter-box h2 { font-size: 28px; }
     .newsletter-form { 
@@ -597,8 +650,4 @@ footer {
     .whatsapp-btn { bottom: 16px; right: 16px; width: 50px; height: 50px; font-size: 24px; }
     .scroll-navigation { bottom: 16px; left: 16px; }
     .nav-arrow { width: 42px; height: 42px; font-size: 16px; }
-}
-
-.logo {
-    height: 30px;
 }
