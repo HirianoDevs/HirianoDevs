@@ -126,8 +126,11 @@
     flex-wrap: wrap;
 }
 
+/* --- BOTÕES DE AÇÃO COM SUPORTE A PROGRESSO --- */
 .btn-store-install {
-    background: var(--accent);
+    position: relative;
+    overflow: hidden;
+    background-color: #0b3fa8; /* Cor base de fundo (azul escuro) */
     color: #ffffff;
     padding: 16px 36px;
     border-radius: var(--radius-pill);
@@ -139,12 +142,44 @@
     gap: 10px;
     box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
     transition: all 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Camada que faz a animação do progresso */
+.btn-store-install::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--progress, 0%);
+    background-color: #0066FF; /* Azul de destaque do progresso */
+    z-index: -1;
+    transition: width 0.15s ease-out;
+}
+
+/* Garante que o texto e ícone fiquem visíveis por cima do progresso */
+.btn-store-install * {
+    position: relative;
+    z-index: 2;
 }
 
 .btn-store-install:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 30px rgba(37, 99, 235, 0.5);
 }
+
+/* Animação do ícone girando durante o download */
+.ri-spin {
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 .btn-store-secondary {
     background: transparent;
@@ -532,4 +567,3 @@
         width: 42%;
     }
 }
-
