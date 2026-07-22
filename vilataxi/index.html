@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VilaTaxi — Aplicativo de Mobilidade Urbana | HirianoDevs</title>
+
+    <meta name="theme-color" content="#0066FF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS Globais e Estilos da Store -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="vilataxi-store.css">
+</head>
+<body>
+
+    <header>
+        <!-- BARRA FIXA DO TOPO -->
+        <div class="top-bar">
+            <div class="container top-bar-container">
+                <div class="top-bar-content">
+                    <img src="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/ccfa45b3-053c-4692-838f-c1f5b3a92fce.png" alt="VilaTaxi Logo" class="top-bar-logo">
+                    <span>Baixe a app <strong>VilaTaxi</strong>!</span>
+                </div>
+                <a href="#download" class="top-bar-btn">Baixar App <i class="ri-download-2-line"></i></a>
+            </div>
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <div class="container nav-container">
+            <a href="../" class="logo">
+                <img class="logo" src="../images/logo.png" alt="HirianoDevs">
+                HirianoDevs
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../" class="nav-link">Início</a></li>
+                <li><a href="../#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="../#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="../#precos" class="nav-link">Preços</a></li>
+            </ul>
+
+            <div class="nav-right-wrapper">
+                <div class="nav-btn-wrapper">
+                    <a href="../" class="btn-pill"><i class="ri-arrow-left-line"></i> Voltar</a>
+                </div>
+
+                <div class="header-actions">
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Alternar Tema">
+                        <i class="ri-moon-line"></i>
+                    </button>
+                    <div class="menu-toggle" id="menuToggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="store-main">
+        <div class="container">
+
+            <!-- CABEÇALHO DO APLICATIVO (ESTILO PLAYSTORE) -->
+            <section class="app-header-card">
+                <div class="app-header-top">
+                    <div class="app-icon-wrapper">
+                        <img src="https://i.supaimg.com/0c2919e9-36a7-40d3-ba4e-45bbb4658911/ccfa45b3-053c-4692-838f-c1f5b3a92fce.png" alt="VilaTaxi Icon">
+                    </div>
+                    <div class="app-title-group">
+                        <span class="verified-badge"><i class="ri-checkbox-circle-fill"></i> App Oficial</span>
+                        <h1>VilaTaxi — Viagens Rápidas</h1>
+                        <p class="app-developer">Desenvolvido por <strong>HirianoDevs Inc.</strong></p>
+                        <p class="app-category">Mobilidade & Transporte</p>
+                    </div>
+                </div>
+
+                <!-- MÉTRICAS / ESTATÍSTICAS DO APP -->
+                <div class="app-stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">4.9 <i class="ri-star-fill star-icon"></i></div>
+                        <div class="stat-label">12.4K avaliações</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">50K+</div>
+                        <div class="stat-label">Downloads</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value"><i class="ri-shield-check-line text-green"></i></div>
+                        <div class="stat-label">Livre / Seguro</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">24 MB</div>
+                        <div class="stat-label">Tamanho APK</div>
+                    </div>
+                </div>
+
+                <!-- AÇÕES DE DOWNLOAD -->
+                <div class="app-action-buttons" id="download">
+                    <a href="#" class="btn-store-install">
+                        <i class="ri-download-cloud-2-line"></i>
+                        <span>Baixar APK Direto (v2.4.0)</span>
+                    </a>
+                    <a href="#" class="btn-store-secondary">
+                        <i class="ri-google-play-line"></i>
+                        <span>Play Store</span>
+                    </a>
+                    <button class="btn-store-icon" aria-label="Compartilhar">
+                        <i class="ri-share-line"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- CARROSSEL DE CAPTURAS DE TELA -->
+            <section class="store-section">
+                <h2 class="section-title"><i class="ri-image-line"></i> Capturas de Tela</h2>
+                <div class="screenshots-scroll">
+                    <div class="screenshot-card">
+                        <img src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?q=80&w=600&auto=format&fit=crop" alt="Solicitação de Corrida">
+                        <span class="screen-caption">1. Solicite em 2 toques</span>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=600&auto=format&fit=crop" alt="Mapa em Tempo Real">
+                        <span class="screen-caption">2. Rastreamento GPS</span>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=600&auto=format&fit=crop" alt="Pagamento Fácil">
+                        <span class="screen-caption">3. Múltiplos Pagamentos</span>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=600&auto=format&fit=crop" alt="Avaliação de Motorista">
+                        <span class="screen-caption">4. Segurança 24h</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOBRE O APLICATIVO -->
+            <section class="store-section">
+                <h2 class="section-title"><i class="ri-information-line"></i> Sobre este aplicativo</h2>
+                <div class="store-description-box">
+                    <p>O <strong>VilaTaxi</strong> é a plataforma definitiva de mobilidade urbana desenvolvida pela HirianoDevs. Projetado para oferecer viagens rápidas, confortáveis e transparentes com estimativas de tarifa antes do embarque e rastreamento em tempo real.</p>
+                    <p>Seja para ir ao trabalho ou deslocamentos diários, o VilaTaxi conecta você aos melhores motoristas verificados com preços acessíveis e suporte contínuo 24/7.</p>
+
+                    <div class="tags-container">
+                        <span class="store-tag">Transporte</span>
+                        <span class="store-tag">Mobilidade</span>
+                        <span class="store-tag">Táxi Privado</span>
+                        <span class="store-tag">GPS ao Vivo</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RECURSOS EM DESTAQUE -->
+            <section class="store-section">
+                <h2 class="section-title"><i class="ri-star-line"></i> Recursos Principais</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="ri-map-pin-user-line icon-blue"></i>
+                        <h4>GPS de Alta Precisão</h4>
+                        <p>Acompanhe o percurso e a chegada do seu motorista em tempo real.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="ri-wallet-3-line icon-green"></i>
+                        <h4>Preço Transparente</h4>
+                        <p>Saiba quanto vai pagar antes de confirmar a viagem. Sem taxas oculta.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="ri-user-star-line icon-purple"></i>
+                        <h4>Motoristas Verificados</h4>
+                        <p>Todos os motoristas passam por verificação rigorosa de segurança.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="ri-customer-service-2-line icon-orange"></i>
+                        <h4>Suporte 24/7</h4>
+                        <p>Equipe dedicada pronta para ajudar em qualquer momento da corrida.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INFORMAÇÕES TÉCNICAS -->
+            <section class="store-section">
+                <h2 class="section-title"><i class="ri-code-s-slash-line"></i> Informações do APK</h2>
+                <div class="specs-table-wrapper">
+                    <table class="specs-table">
+                        <tr>
+                            <td><strong>Versão Atual:</strong></td>
+                            <td>2.4.0 (Build 104)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Atualizado:</strong></td>
+                            <td>Julho de 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Requisitos:</strong></td>
+                            <td>Android 7.0 ou superior</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tamanho:</strong></td>
+                            <td>24.8 MB</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Licença:</strong></td>
+                            <td>Gratuito</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- AVALIAÇÕES DE USUÁRIOS -->
+            <section class="store-section">
+                <h2 class="section-title"><i class="ri-chat-smile-2-line"></i> Avaliações</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">MC</div>
+                            <div>
+                                <h5>Mateus Cambinda</h5>
+                                <div class="review-stars">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Interface super limpa e o app não trava no meu celular. Chegou muito rápido!"</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">AS</div>
+                            <div>
+                                <h5>Ana Silva</h5>
+                                <div class="review-stars">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Excelente trabalho da equipa HirianoDevs. Cálculo da tarifa muito preciso."</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HirianoDevs. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
